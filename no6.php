@@ -8,7 +8,6 @@ $JumlahSiswaTertinggi = 0;
 
 while ($i < 10) {
     // input dan masukan ke dalam array
-    echo "Masukkan nilai : ";
     $nilai = readline();
     $siswa[$i] = $nilai;
     
