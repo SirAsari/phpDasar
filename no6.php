@@ -8,9 +8,17 @@ $JumlahSiswaTertinggi = 0;
 
 while ($i < 10) {
     // input dan masukan ke dalam array
-    $nilai = readline();
+    $nilai = readline("Masukan nilai siswa: ");
     $siswa[$i] = $nilai;
-    
+
+    if (!is_numeric($nilai)) {
+        echo "Input harus berupa angka\n";
+        continue;
+    }elseif ($nilai <= 0 || $nilai > 100) {
+        echo "Nilai harus berada dalam rentang 1 hingga 100.\n";
+        continue;
+    }
+
     if ($siswa[$i] > $max){
         $max = $siswa[$i];
         $JumlahSiswaTertinggi = 1;
@@ -21,7 +29,7 @@ while ($i < 10) {
     $i++;
 }
 
-echo "Nilai tertinggi siswa : " . $max . "\n";
+echo "\nNilai tertinggi siswa : " . $max . "\n";
 echo "Jumlah siswa yang memiliki siswa tertinggi : " . $JumlahSiswaTertinggi;
 
 ?>

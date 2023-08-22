@@ -14,12 +14,10 @@ for ($i = 1; $i <= 2; $i++) {
     echo $total = $mtk + $dpk + $ing + $agama + $indo;
 
     if ($kehadiran != 100) {
-        echo "Kehadiran tidak mencapai 100\n";
         continue;
     }
 
     if ($total < 475) {
-        echo "Total nilai tidak mencapai 475\n";
         continue;
     }
 
