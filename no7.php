@@ -1,7 +1,4 @@
 <?php 
-$nilai_minimum = 475;
-$kehadiran_minimum = 100;
-
 $juara = 0;
 
 for ($i = 1; $i <= 15; $i++) {
